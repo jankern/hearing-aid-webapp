@@ -1,0 +1,122 @@
+/* Header styles */
+
+header{
+    
+	display:block;
+	min-height:90px;
+	top:0px;
+    position: fixed;
+	width:100%;
+    background:$base-white;
+    @include box-shadow(0px 25px 25px -20px rgba(151, 151, 151, 0.50));
+    z-index: 99;
+
+    .logo{
+        position:relative;
+        z-index:999;
+        box-sizing:border-box;
+        padding:20px 20px;
+        height:80px;
+        width:220px;
+        float:left;
+        a,img{
+            float:left;
+        }
+    }
+    
+    .nav-container{
+        float:left;
+        width:calc(100% - 220px);
+    }
+    
+    .info{
+        box-sizing:border-box;
+        padding:10px 20px 10px 0px;
+        display:block;
+        height:40px;
+        float:left;
+        text-align:right;
+        width:100%;
+        
+        h1{
+            font-size: 1.3em;  
+            line-height: 0.7em;
+            margin:0px;
+            padding:0px;
+            float:right;
+            
+            i{
+                background:$base-orange; 
+                color:$base-white;
+                vertical-align:1px;
+                margin-right:10px;
+                @include border-radius(50px);  
+                font-size: 0.7em;
+                padding:3px; 
+            }
+        }
+        
+        span{
+            font-size:0.8em;
+            line-height: 0.8em;
+            font-weight: $medium;
+            color:$base-grey-medium-dark;
+            margin-right: 10px;
+            vertical-align:3px;
+        }
+    }
+   
+
+    @media screen and (max-width:992px) {
+
+    }
+
+    @media only screen and (max-device-width:992px) and (-webkit-min-device-pixel-ratio : 1.5) and (min-device-pixel-ratio : 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3){
+        
+    }
+
+    @media screen and (max-width:600px) {
+        .logo{
+            padding-top:28px;
+            padding-right:0px;
+            width:160px;
+            a,img{
+                width:100%;
+            }
+        }
+        .nav-container{
+            width:calc(100% - 160px);
+        }
+        .info{
+            span{
+                 display:none;
+            }
+            h1{
+                font-size:0.9em;
+            }
+           
+        }
+    }
+
+    @media only screen and (max-device-width:600px) and (-webkit-min-device-pixel-ratio : 1.5) and (min-device-pixel-ratio : 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3){
+        .logo{
+            width:150px;
+            a,img{
+                width:100%;
+            }
+        }
+        .nav-container{
+            width:calc(100% - 150px);
+        }
+        .info{
+            span{
+                 display:none;
+            }
+            h1{
+                font-size:0.9em;
+            }
+        }
+    }
+}
+    
+   

@@ -1,0 +1,254 @@
+/* Navigation styles for header and side nav */
+
+nav {
+    display:block;
+    box-shadow: none;
+    background: $base-white;
+    
+    &.header {
+        position:absolute;
+        top:40px;
+        width:100%; 
+        float: left;
+        background: $base-white;
+        padding: 0 0px;
+        margin: 0px;
+        height: 50px;
+        float: left;
+        text-align: center;
+        
+        ul {
+            margin: 0 auto;
+            display: inline-block;
+        }
+        
+        ul a {
+            color: $base-orange;
+            display: block;
+            padding: 3px 0px 21px 0px;
+            margin: 0 15px;
+            cursor: pointer;
+            font-weight: $bold;
+            font-family: $nav-font;
+            font-size: 1.2em;
+            &:hover{
+                background: none;
+            }
+            
+        }
+        
+        ul li{
+            &:hover, &.active{
+                background:url("../assets/img/terzo_menu_active.png") center bottom no-repeat;
+            }
+        }
+        
+        li div.sub-nav{
+            border-bottom: solid 2px $base-orange;
+            display:block;
+            position:absolute;
+            z-index:9999;
+            left:0px;
+            margin-top:0px;
+            float:left;
+            width:100%;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            background:url("../assets/img/terzo_menu_bg.png") center repeat-y;
+            border-radius: 0 0 3px 3px;
+            text-align:center;
+            padding:0px;
+            @include box-shadow(0px 25px 25px -20px rgba(151, 151, 151, 0.30));
+        }
+        
+        .sub-nav-column{
+            
+            width:480px;
+            box-sizing: border-box;
+            display:inline-block;
+            vertical-align:top;
+            
+            &.start-article{
+                width:480px;
+            }
+            
+            .article-intro{
+                margin:0px;
+                width:100%;
+                padding:0px;
+                text-align:left;
+                padding:10px;
+                
+                h1{
+                    font-size:1.2em;
+                    color:$base-white;
+                    padding:0px;
+                    margin:10px;
+                    text-align:left;
+                    
+                }
+                p{
+                    color: $base-black;
+                    margin:0px;
+                    padding:10px;
+                    font-size:0.9em;
+                }
+            }
+            
+            ul{
+                display: block;
+                padding:18px;
+            }
+            
+            li {
+                float:none;
+                
+                a{
+                    color:$base-black-light;
+                    font-size: 0.9em;
+                    text-align:left;
+                    border:none;
+                    margin:0px;
+                    padding:5px;
+                    
+                    i{
+                        display: inline-block; 
+                        font-size: 1.1em;
+                        height:auto;
+                        line-height: 1em;  
+                        vertical-align:-3px;
+                        font-weight:$bold;
+                    }
+                    &:hover/*, &.active*/
+                    {
+                        color:$base-orange-dark;
+                        i{
+                            color:$base-orange-dark;  
+                        }
+                    }
+                }
+                
+                &:hover{
+                    background:none;
+                }
+            }
+            
+        }
+        
+        li:hover div.sub-nav{
+            @include opacity(0.9);
+            visibility: visible; 
+            overflow: visible;
+        }
+        
+    }
+}
+
+.side {
+    float: right;
+    width: 220px;
+    text-align: right;
+    a.button-collapse {
+        color: $base-orange;
+        background: $base-white;
+        border: $base-grey-light 1px solid;
+        margin: 0 20px;
+        cursor: pointer;
+        font-weight: $bold;
+        font-family: $nav-font;
+        i {
+            font-size: 1.7em;
+            font-weight: $bold;
+        }
+    }
+}
+
+.side-nav {
+    text-align: left;
+    z-index: 999;
+    
+    div.side-nav-header{
+        height:90px;
+        width:100%;
+        background:$base-orange;
+        z-index:9999;
+    }
+    
+    ul{
+        padding-bottom:70px;
+    }
+}
+
+.side-nav li {
+    
+    background:$base-white;
+    border-bottom:1px solid $base-grey-light;
+    
+    a{
+        font-family: $nav-font;
+        padding-left:20px;
+        padding-right:10px;
+        height:auto;
+        &:hover, &.active{
+            color:$base-orange-dark;
+            background:url("../assets/img/terzo_side_menu_active.png") left center no-repeat;
+        }
+    }
+    
+    .side-nav-sub{
+        
+        ul{
+            margin-top:0px;
+            padding-bottom:0px;
+        }
+        
+        li{
+            border-bottom:0px solid $base-orange;
+        }
+        
+        padding: 0 0 10px 0;
+
+        a{
+            line-height:1.9em;
+            padding-left:40px;
+            i{
+                display: inline-block; 
+                font-size: 1.1em;
+                height:auto;
+                line-height: 1em;  
+                vertical-align:3px;
+                font-weight:$bold;
+                padding:5px 0px 0px 0px;
+                margin:0px 0px 0px -22px;
+            }
+            
+            &:hover{
+                background:none;
+                color:$base-orange-dark;
+                i{
+                    color:$base-orange-dark;
+                }
+            }
+            
+            &.active{
+                background:none;
+                color:$base-black;
+            }
+            
+            
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav.header{
+        display:none;
+    }
+}
+
+@media only screen and (max-device-width: 992px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+    nav.header{
+        display:none;
+    }
+}

@@ -1,0 +1,75 @@
+// CSS Variables
+
+// Font weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font:"Roboto";
+$base-font-weight: $light;
+$base-font-size: 18px;
+$base-line-height: 26px;
+
+// Nav Font
+$nav-font:"Roboto Condensed";
+
+// Headings
+$header1-font: "Roboto Condensed";
+$header1-font-family: sans-serif;
+$header1-font-weight: $bold;
+
+$header2-font: "Lora";
+$header2-font-family: serif;
+$header2-font-weight: $regular;
+
+
+// Colors
+$base-black:#000000;
+$base-black-light:#333333;
+
+$base-white:#FFFFFF;
+$base-white-medium:#EFF3F5;
+
+$base-grey:#DCD9D4;
+$base-grey-light-super:#f7f4f7;
+$base-grey-light:#E4E3E4;
+$base-grey-medium:#C5C3C1;
+$base-grey-medium-dark2:#b5b1af;
+$base-grey-medium-dark:#A19998;
+$base-grey-dark:#5C4F3D;//#635F5E;
+
+//$base-orange:#F49E00;
+$base-orange-medium:#F1A84C;
+$base-orange-light:#FAD58D;
+//$base-orange-dark:#F48A03;
+$base-orange:#ec952c;
+$base-orange-dark:#e18236;
+$base-orange-dark-intense:#fb5a11;
+
+$message-warn:#F4E271;
+
+$green-lighten-4:#c8e6c9;
+$green-lighten-2:#81c784;
+$red-lighten-4:#ffcdd2;
+$red-lighten-3:#ef9a9a;
+$amber-lighten-4:#ffecb3;
+$amber-lighten-3:#ffe082;
+
+$message-error:#a50d0d;
+$message-error-light:#d80f0f;
+
+
+// Test colors
+$tr:red;
+$tb:blue;
+$tg:green;
+$tp:pink;
+$ty:yellow;
+$tp1:purple;
+$tb:brown;
+
+
+

@@ -1,0 +1,194 @@
+/* Bootstrap styles */
+
+.container-fluid {
+    padding: 0px;
+}
+.row {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.btn,
+.btn-large,
+.btn-flat {
+    @include border-radius(2px);
+    font-family: $nav-font, $base-font-family;
+    text-transform: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav ul a.btn,
+nav ul a.btn-large,
+nav ul a.btn-flat {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    border-bottom: 1px solid $base-orange-light;
+    height: 2rem;
+    color: $base-white;
+    background: red;
+}
+.input-field label {
+    color: $base-white;
+    top: 0.5rem;
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $base-white;
+    box-shadow: 0 1px 0 0 $base-white;
+}
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $base-white;
+}
+[type="radio"]:not(:checked) + label::before,
+[type="radio"]:not(:checked) + label::after {
+    border: 2px solid $base-orange-light;
+}
+[type="radio"]:checked + label::after,
+[type="radio"].with-gap:checked + label::before,
+[type="radio"].with-gap:checked + label::after {
+    border: 2px solid $base-white;
+}
+[type="radio"]:checked + label::after,
+[type="radio"].with-gap:checked + label::after {
+    background-color: $base-white;
+}
+[type="checkbox"]:not(:checked) + label::before,
+[type="checkbox"]:not(:checked) + label::after {
+    border: 2px solid $base-orange-light;
+}
+[type="checkbox"]:checked + label::before {
+    border-right: 2px solid $base-white;
+    border-bottom: 2px solid $base-white;
+}
+[type="checkbox"] + label::before,
+[type="checkbox"]:not(.filled-in) + label::after {
+    margin: 5px auto auto 5px;
+}
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    border-bottom: 1px solid $base-white;
+}
+/* label color */
+
+.input-field label {
+    color: $base-white;
+}
+/* label focus color */
+
+.input-field input[type=text]:not(.browser-default).validate + label,
+.input-field input[type=email]:not(.browser-default).validate + label {
+    color: $base-white;
+}
+.input-field input[type=text]:not(.browser-default).validate + label.active::after,
+.input-field input[type=email]:not(.browser-default).validate + label.active::after {
+    padding-left: 6px;
+    margin-top: -10px;
+    color: $message-error;
+}
+/* label underline focus color */
+
+.input-field input[type=text],
+.input-field input[type=email] {
+    height: 2.1em;
+    padding: 10px 0 0 0;
+}
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid $base-white;
+    box-shadow: 0 1px 0 0 $base-white;
+}
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid $base-white;
+    box-shadow: 0 1px 0 0 $base-white;
+}
+/* valid color */
+
+.input-field input[type=text].valid,
+.input-field input[type=email].valid {
+    border-bottom: 1px solid $base-white;
+    box-shadow: 0 1px 0 0 $base-white;
+}
+/* invalid color */
+
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid {
+    border-bottom: 1px solid $message-error-light;
+    box-shadow: 0 1px 0 0 $message-error-light;
+}
+.input-field input[type=text]:focus.invalid,
+.input-field input[type=email]:focus.invalid {
+    border-bottom: 1px solid $message-error-light;
+    box-shadow: 0 1px 0 0 $message-error-light;
+}
+
+.container-fluid .offer div.addon-contact-campaign div.preloader-wrapper.small{
+    width:36px;
+    height:36px;
+}
+
+.container-fluid .offer div.addon-contact-campaign div.preloader-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    min-height:50px;
+}
+
+.container-fluid .offer div.addon-contact-campaign div.preloader-wrapper .spinner-layer.spinner-green-only{
+    min-height: 36px;
+    display: inline-block; 
+    vertical-align: top; 
+    text-align: center; 
+    width: 36px; 
+    margin: 0px 0 0 0px; 
+}
+

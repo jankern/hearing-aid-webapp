@@ -1,0 +1,905 @@
+/* content therapie Styles */
+
+.content-default {
+    main {
+        min-height: 100%;
+        text-align: center;
+    }
+    .article-intro {
+        background: $base-orange;
+        @include radial-gradient($base-orange-medium, $base-orange);
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-bottom: 0px;
+        h1 {
+            font-size: 4em;
+            line-height: 1.1em;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            display: inline-block;
+            color: $base-white;
+            em {
+                color: $base-black;
+            }
+        }
+        h2 {
+            padding-top: 25px;
+        }
+    }
+    .card{
+        .card-image {
+            border-bottom:1px solid $base-white-medium;
+            min-height:200px;
+            .card-title{
+                font-size:1em;
+            }
+        }
+        .card-content h1{
+            padding:0 0 20px 0px;
+            font-size:2em;
+            min-height:80px;
+            line-height:1.2em;
+            color:$base-black;
+            margin:0 0 0px 0;
+        }
+        a.btn{
+            margin:0px;
+            background:$base-orange-dark;
+            color:$base-white;
+            &:hover{
+                background:$base-orange-dark;
+            }
+        }
+        p{
+            display:inline-block;
+            margin:0 0 1em 0;
+            vertical-align: top;
+        }
+        
+        margin: 10px 5px 10px 5px;
+        border:solid 1px $base-grey-light;
+        @include border-radius(2px);
+        @include box-shadow(0 3px 1px -2px rgba(151,150,151,0.9));
+        
+        &.col-3{
+            width:316px;
+            .card-content {
+                min-height:340px;
+            }
+        }
+        
+        &.col-3-medium{
+            width:316px;
+            .card-content {
+                min-height:540px;
+            }
+        }
+        
+        &.col-3-long{
+            width:316px;
+            .card-content {
+                min-height:1000px;
+            }
+        }
+        
+        &.col-2{
+           width:635px;
+            .card-content {
+                min-height:340px;
+            } 
+        }
+        
+        &.col-2-medium{
+            width:635px;
+            .card-content {
+                min-height:540px;
+            } 
+        }
+        
+        &.col-2-long{
+            width:635px;
+            .card-content {
+                min-height:1000px;
+            } 
+        }
+        
+        .light{
+            color:$base-white;
+        }
+        
+        .dark{
+            color:$base-black;
+        }
+        
+        &.tiny{
+            width:318px; 
+        }
+        
+        &.half-width{
+            width:475px;
+        }
+    }
+    .store-intro{
+            padding:40px 0;
+            h1{
+                font-size: 2.9em;
+                line-height: 1.4em;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+                display: inline-block;
+                color: $base-black;
+        }
+    }
+    .person-galery{
+        padding-bottom:40px;
+        h2{
+            font-family: $header1-font, $header1-font-family;
+            padding:20px 0 40px;
+        }
+        h3{
+            padding:20px 0 10px;
+        }
+    }
+    .store-activity{
+        width:280px;
+        display:inline-block;
+        vertical-align: top;
+        p, a{
+            font-family: $base-font, $base-font-family;
+            font-weight:$regular;
+            text-align: left;
+            color:$base-orange-medium;
+            font-size:0.8em;
+        }
+        i{
+            float:right;
+            background:none;
+            font-size:1.3em;
+            padding-top: 2px;
+            color:$base-orange;
+        }
+        span{
+            @include border-radius(2px);
+            color:$base-white;
+        }
+        img{
+            padding:30px 0 14px;
+            margin: 0 0 0px;
+            height:42px;
+            box-sizing: content-box;
+        }
+        h2 {
+            padding: 20px 0;
+            font-family:$header1-font, $header1-font-family;
+            color:$base-orange;
+            font-size:1.9em;
+            font-weight:$bold;
+        }
+        
+    }
+    .store-address{
+        border:1px solid $base-grey;
+        @include border-radius(3px);
+        width:300px;
+        display:inline-block;
+        vertical-align: top;
+        min-height:310px;
+        box-sizing: border-box;
+        padding:20px;
+        text-align:left;
+        margin:0 5px 20px 5px;
+        @include box-shadow(0 3px 1px -2px rgba(151,150,151,0.9));
+        h3{
+            margin-bottom:30px;
+        }
+        p{
+            padding:5px 0 0px 40px;
+            &.place{
+                padding-left:30px;
+                padding-bottom:10px;
+            }
+        }
+        i{
+            margin-left:-40px; 
+            padding-right: 10px;
+        }
+    }
+    .store-address.opening-hours{
+        padding:0px;
+        h3{
+            padding:20px 20px 0;
+        }
+        p{
+            font-size:0.8em;
+            padding:5px 20px;
+            &.current-day{
+                background:$base-grey-light-super;
+            }
+        }
+        b{
+            width:30px;
+            float:left;
+        }
+        span.badge{
+            font-size:0.7em;
+            background:red;
+            font-weight:$regular;
+            margin-left: 0px;
+            margin-top: 2px;
+            margin-right: -5px;
+            padding-left:2px;
+            padding-right:2px;
+            color:$base-black;
+            float:right;
+            @include border-radius(2px);
+            &.open{
+                background:$green-lighten-2;
+            }
+            &.closed{
+                background:$red-lighten-3;
+            }
+            &.closing{
+                background:$amber-lighten-3;
+            }
+        }
+    }
+    .store-address.map{
+        height:310px;
+        padding:0px;
+        iframe{
+            height:100%;
+            width:100%;
+            margin:0px;
+            padding:0px 0px 0px;
+        }
+    }
+    .store-list {
+        text-align: center;
+        background-color:$base-grey-light;
+        h1 {
+            color: $base-grey-medium;
+            font-size: 4em;
+            line-height: 1.1em;
+            margin-bottom: 50px;
+            padding-top: 50px;
+            span {
+                color: $base-orange;
+            }
+        }
+        &.home {
+            min-height: 100%;
+            padding: 80px 140px 20px 140px;
+            text-align: left;
+            .centered {
+                width: 100%;
+            }
+            h1 {
+                color: $base-black;
+                margin-top: 0px;
+            }
+            background-color:$base-white !important;
+            p {
+                margin: 10px 0;
+                width: 500px;
+            }
+        }
+        .card {
+            display: inline-block;
+            margin: 5px 5px 10px 5px;
+            vertical-align: top;
+            text-align: left;
+            width:313px;
+            .card-content{
+                min-height:380px;
+            }
+        }
+        
+        padding:0px 0px 20px 0px;
+    }
+    .slider {
+        height: 300px !important;
+        
+        #panorama-btn{
+            position:absolute;
+            bottom:20px;
+            z-index: 9;
+            left:20px;
+            
+            i{
+                vertical-align: -4px;
+                margin-right:5px;
+            }
+        }
+        
+        .slides {
+            height: 300px !important;
+        }
+        .left-align {
+            text-align: center;
+        }
+        .right-align {
+            text-align: center;
+        }
+        a.btn {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 1.0em;
+            margin: 20px 0 0 0;
+            background: $base-orange-dark;
+        }
+        h2 {
+            padding: 0 100px;
+        }
+        .indicators {
+            z-index: 99;
+            li {
+                margin: 20px;
+            }
+        }
+    }
+    .benefits {} .card {
+        display: inline-block;
+        margin: 20px 0;
+        vertical-align: top;
+        text-align: left;
+    }
+    .category-collection, .category-single {
+        .centered {
+            width: 1030px;
+        }
+        p.med-description {
+            padding: 10px;
+            margin: -5px 0 10px 0;
+            background: $base-grey-light;
+            font-size: 0.9em;
+            line-height: 1.7em;
+            font-style: italic;
+            min-height: 98px;
+            color: $base-grey-dark;
+        }
+    }
+    .text-widgets {
+        text-align: center;
+        i.material-icons.inverse {
+            font-size: 3em;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 100px;
+        }
+        p {
+            padding: 10px 0;
+        }
+        a {
+            &.btn {
+                background: $base-orange;
+            }
+        }
+        padding-bottom:40px;
+    }
+    .hearing-solution-container {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px 30px;
+        background-color: $base-grey-light;
+        border-bottom: 1px solid $base-white;
+        h1 {
+            color: $base-grey-medium-dark;
+            font-size: 1.6em;
+        }
+        .column-left {
+            display: inline-block;
+            vertical-align: top;
+            width: 570px;
+            height: 340px;
+            padding: 15px 0 0 0;
+        }
+        .column-right {
+            display: inline-block;
+            vertical-align: top;
+            width: 420px;
+            text-align: left;
+            box-sizing: border-box;
+            padding: 5px 0px 10px 20px;
+            p {
+                font-size: 0.9em;
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: solid 5px $base-grey-medium;
+            @include border-radius(2px);
+            @include box-shadow(0 3px 1px -2px rgba(151, 150, 151, 0.9));
+        }
+    }
+    .offer-reference {
+        a {
+            width: 100px;
+            padding: 0px 5px;
+        }
+    }
+    .download-container {
+        .collection {
+            text-align: left;
+            a {
+                color: $base-orange;
+            }
+        }
+    }
+    .column {
+        margin-left: -10px;
+        margin-right: -10px;
+        h1 {
+            font-size: 1.6em;
+            color: $base-black;
+        }
+        .s12 {
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            padding-bottom: 15px;
+        }
+    }
+    .modal {} #panorama .modal-content {
+        padding: 0px;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .gallery-item{
+        box-sizing: border-box;
+        padding:10px 0;
+        vertical-align: top;
+    }
+    ul.pagination.single-scroll{
+        position:fixed;
+        background:transparent;
+        top:50%;
+        margin-top:-50px;
+        @include box-shadow(1px 0px 4px 1px rgba(151,150,151,0.5));
+        li{
+            display:block;
+            background:transparent;
+        }
+        a{
+            background:$base-white;
+            font-size:0.9em;
+            padding-left:15px;
+            margin-left:-5px;
+            color:$base-grey-medium-dark;
+//            @include border-radius(2px);
+            &.active{
+                background:$base-orange;
+                color:$base-white;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        ul.pagination.single-scroll{
+            display:none;
+        }
+        .category-collection, .category-single {
+            .centered {
+                box-sizing: border-box;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+        ul.pagination.single-scroll{
+            display:none;
+        }
+        .category-collection, .category-single {
+            .centered {
+                box-sizing: border-box;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .article-intro {
+            h1 {
+                font-size: 2.9em;
+            }
+        }
+        .column {
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+        .store-activity, .store-address{
+            width:calc(50% - 20px);
+            box-sizing: border-box;
+            h2{
+                padding:0.3em 0.5em;
+            }
+            img{
+                padding:0.85em 0px 0.5em 
+            }
+        }
+        .store-intro{
+            padding:0.5em 1em;
+            h1, h2, h3{
+                font-size:1.8em;
+                padding:0.4em 1em;
+            }
+        }
+        .person-galery{
+            h2{
+                font-size:1.2em;
+                padding:0.5em 20px;
+            }
+        }
+        .store-list {
+            h1 {
+                font-size: 2em;
+                line-height: 1.0em;
+                margin-bottom: 50px;
+                padding-top: 50px;
+            }
+            &.home p{
+                width:100%;
+            }
+        }
+        .hearing-solution-container {
+            padding: 20px 0;
+            h1 {
+                font-size: 1.6em;
+            }
+            .column-left {
+                width: 400px;
+                height: 244px;
+                padding: 15px 0 0 0;
+            }
+            .column-right {
+                width: 330px;
+                padding: 5px 0px 10px 20px;
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px;
+            }
+            div{
+                width:calc(100% - 40px);
+                margin: 20px;
+                min-height:auto;
+                height:auto;
+                p{
+                    padding-right: 0px;
+                }
+                &.addon-contact-campaign{
+                    position:relative;
+                    width:calc(100% - 40px);
+                    margin:0 0 20px 0;
+                }
+            }
+            
+        }
+        .card{
+            .card-image {
+                width: 100%;
+                min-height:auto;
+            }
+            .card-content {
+                min-height: auto;
+                h1 {
+                    min-height: auto;
+                }
+            }
+            &.col-3, &.col-3-medium, &.col-3-long, &.col-2, &.col-2-medium, &.col-2-long{
+                min-height:auto;
+                height:auto;
+                width:calc(100% - 40px);
+            } 
+
+        }
+    }
+    @media only screen and (max-device-width: 992px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+        .article-intro {
+            h1 {
+                font-size: 2.9em;
+            }
+        }
+        .column {
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+        .store-activity, .store-address{
+            width:calc(50% - 20px);
+            box-sizing: border-box;
+            h2{
+                padding:0.3em 0.5em;
+            }
+            img{
+                padding:0.5em 0px 0.5em 
+            }
+        }
+        .store-intro{
+            padding:0.5em 1em;
+            h1, h2, h3{
+                font-size:1.8em;
+                padding:0.4em 1em;
+            }
+        }
+        .person-galery{
+            h2{
+                font-size:1.2em;
+                padding:0.5em 20px;
+            }
+        }
+        .store-list {
+            h1 {
+                font-size: 2em;
+                line-height: 1.0em;
+                margin-bottom: 50px;
+                padding-top: 50px;
+            }
+            &.home p{
+                width:100%;
+            }
+        }
+        .hearing-solution-container {
+            padding: 20px 0;
+            h1 {
+                font-size: 1.6em;
+            }
+            .column-left {
+                width: 400px;
+                height: 210px;
+                padding: 15px 0 0 0;
+            }
+            .column-right {
+                width: 330px;
+                padding: 5px 0px 10px 20px;
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px;
+            }
+            div{
+                width:calc(100% - 40px);
+                margin: 20px;
+                min-height:auto;
+                height:auto;
+                p{
+                    padding-right: 0px;
+                }
+                &.addon-contact-campaign{
+                    position:relative;
+                    width:calc(100% - 40px);
+                    margin:0 0 20px 0;
+                }
+            }
+            
+        }
+        .card{
+            .card-image {
+                width: 100%;
+                height:auto;
+            }
+            .card-content {
+                min-height: auto;
+                h1 {
+                    min-height: auto;
+                }
+            }
+            &.col-3, &.col-3-medium, &.col-3-long, &.col-2, &.col-2-medium, &.col-2-long{
+                min-height:auto;
+                height:auto;
+                width:calc(100% - 40px);
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .column .col.s6, .column .col.s12, .column .col.s4 {
+            width: 100%;
+            margin-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .article-intro {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+            padding-right: 2px;
+            margin-bottom: 2px;
+            h1 {
+                font-size: 2.1em;
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px;
+            }
+            div{
+                width:calc(100% - 40px);
+                margin: 20px;
+                min-height:auto;
+                height:auto;
+                p{
+                    padding-right: 0px;
+                }
+                &.addon-contact-campaign{
+                    position:relative;
+                    width:calc(100% - 40px);
+                    margin:0 0 20px 0;
+                }
+            }
+            
+        }
+        .store-list {
+            &.home {
+                background: $base-white !important;
+                padding: 20px 20px 20px 20px;
+            }
+            .card{
+                .card-image{
+                    min-height:auto;
+                }
+                .card-content{
+                    min-height:auto;
+                }
+                width:calc(100% - 40px);
+                box-sizing: border-box;
+                margin: 10px 20px;
+                .short, .short-mid, .mid-long, .long{
+                    min-height:auto;
+                }
+        
+                .short-mid{
+                    min-height:400px;
+                }
+
+                .mid-long{
+                    min-height:520px;
+                }
+
+                .long{
+                    min-height:620;
+                }
+            }
+        }
+        .store-activity, .store-address{
+            width:calc(100% - 20px);
+            box-sizing: border-box;
+        }
+        .hearing-solution-container {
+            padding: 20px;
+            h1 {
+                font-size: 1.6em;
+            }
+            .column-left {
+                width: 100%;
+                height: 380px;
+                padding: 15px 0 10px 0;
+            }
+            .column-right {
+                width: 100%;
+                padding: 5px 0px 10px 0px;
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    @media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+        .column .col.s6, .column .col.s12, .column .col.s4 {
+            width: 100%;
+            margin-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .article-intro {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            h1 {
+                font-size: 2.1em;
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px;
+            }
+            div{
+                width:calc(100% - 40px);
+                margin: 20px;
+                min-height:auto;
+                height:auto;
+                p{
+                    padding-right: 0px;
+                }
+                &.addon-contact-campaign{
+                    position:relative;
+                    width:calc(100% - 40px);
+                    margin:0 0 20px 0;
+                }
+            }
+            
+        }
+        .store-list {
+            &.home {
+                background: $base-white !important;
+                padding: 20px 20px 20px 20px;
+            }
+            .card{
+                width:calc(100% - 40px);
+                box-sizing: border-box;
+                margin: 10px 20px;
+                .card-image{
+                    min-height:auto;
+                }
+                .card-content{
+                    min-height:auto;
+                }
+                .short, .short-mid, .mid-long, .long{
+                    min-height:auto;
+                }
+        
+                .short-mid{
+                    min-height:400px;
+                }
+
+                .mid-long{
+                    min-height:520px;
+                }
+
+                .long{
+                    min-height:620px;
+                }
+            }
+        }
+        .store-activity, .store-address{
+            width:calc(100% - 40px);
+            box-sizing: border-box;
+        }
+        .hearing-solution-container {
+            padding: 20px;
+            h1 {
+                font-size: 1.6em;
+            }
+            .column-left {
+                width: 100%;
+                height: 380px;
+                padding: 15px 0 10px 0;
+            }
+            .column-right {
+                width: 100%;
+                padding: 5px 0px 10px 0px;
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}

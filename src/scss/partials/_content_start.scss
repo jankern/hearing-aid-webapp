@@ -1,0 +1,393 @@
+/* content start Styles */
+
+html,
+body {
+    height: 100%;
+}
+.content-start {
+    main {
+        min-height: 100%;
+    }
+    .slider {
+        .left-align {
+            text-align: center;
+        }
+        .right-align {
+            text-align: center;
+        }
+        a.btn {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 1.0em;
+            margin: 20px 40% 0 40%;
+            background: $base-orange-dark;
+        }
+        h1,
+        h2 {
+            color: $base-white;
+            display:inline-block;
+            margin:5px 20%;
+            padding:10px 20px;
+//            background-color:rgba(243, 126, 7, 0.5);
+            background-color:rgba(0, 0, 0, 0.3);
+        }
+        .indicators {
+            z-index: 90;
+            li {
+                margin: 20px;
+            }
+            .indicator-item{
+                background:$base-grey-light;
+                &.active{
+                    background:$base-orange;
+                }
+            }
+        }
+    }
+    .store-list {
+        text-align: center;
+        background-color:$base-grey-light;
+        h1 {
+            color: $base-grey-medium;
+            font-size: 4em;
+            line-height: 1.1em;
+            margin-bottom: 50px;
+            padding-top: 50px;
+            span {
+                color: $base-orange;
+            }
+        }
+        &.home {
+            min-height: 100%;
+            padding: 80px 140px 20px 140px;
+            text-align: left;
+            background-position: center right; 
+            background-repeat:no-repeat;
+            background-size: 100% auto;
+            .centered {
+                width: 100%;
+            }
+            h1 {
+                color: $base-black;
+                margin-top: 0px;
+                padding: 20px 15px;
+                background-color:rgba(255,255,255,0.7);
+            }
+            background-color:$base-white !important;
+            p {
+                margin: 0px 0;
+                padding:5px 15px;
+                width: 500px;
+                background-color:rgba(255,255,255,0.7);
+            }
+        }
+        .card {
+            display: inline-block;
+            width: 315px;
+            margin: 5px 5px 10px 5px;
+            vertical-align: top;
+            text-align: left;
+            .card-content{
+                min-height:380px;
+            }
+        }
+        
+        padding:0px 0px 20px 0px;
+    }
+    .benefits {
+        background-color:$base-grey-light;
+        h1 {
+            color: $base-grey-medium-dark;
+            font-size: 3em;
+            line-height: 1.1em;
+            margin-bottom: 80px;
+        }
+        text-align:center;
+        i.material-icons {
+            background: $base-grey-medium-dark;
+            color: $base-white;
+            vertical-align: 0px;
+            margin-right: 10px;
+            @include border-radius(50px);
+            font-size: 2.4em;
+            padding: 20px;
+            text-align:center;
+        }
+        h3{
+            margin:20px auto 40px;
+            text-align:center;
+        }
+    }
+    @media screen and (max-width: 1394px) {
+        .store-list {
+            &.home {
+                background-size: auto 100%;
+            }
+        }
+    }
+    @media only screen and (max-device-width: 1394px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+        .store-list {
+            &.home {
+                background-size: auto 100%; 
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .slider{
+            h2{
+                padding:10px 50px;
+                font-size:1.3em;
+                margin:5px 0;
+            }
+        }
+        .benefits {
+            h1{
+               font-size: 2em; 
+                margin-bottom: 40px;
+            }
+            
+            i.material-icons {
+               font-size: 1.4em; 
+               padding: 15px; 
+            }
+            
+            h3{
+                font-size:1.0em;
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px 40px;
+            }
+            div{
+                width:400px;
+            }
+        }
+        .store-list {
+            h1 {
+                font-size: 2em;
+                line-height: 1.0em;
+                margin-bottom: 50px;
+                padding-top: 50px;
+            }
+            &.home {
+                p{
+                    width:100%;
+                }
+            }
+        }
+    }@media only screen and (max-device-width: 992px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+        .slider{
+            h2{
+                padding:10px 50px;
+                font-size:1.3em;
+                margin:5px 0;
+            }
+        }
+        .benefits {
+            h1{
+               font-size: 2em; 
+                margin-bottom: 40px;
+            }
+            
+            i.material-icons {
+               font-size: 1.4em; 
+               padding: 15px;    
+            }
+            
+            h3{
+                font-size:1.0em;
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px 40px;
+            }
+            div{
+                width:400px;
+            }
+        }
+        .store-list {
+            h1 {
+                font-size: 2em;
+                line-height: 1.0em;
+                margin-bottom: 50px;
+                padding-top: 50px;
+            }
+            &.home {
+                p{
+                    width:100%;
+                }
+            }
+        }
+    }@media screen and (max-width: 768px) {
+        .slider{
+            h1{
+                font-size:1.4em;
+                margin-right:0px;
+                margin-left:0px;
+            }
+            h2{
+                padding:10px 20px;
+            }
+            a.btn {
+                margin: 20px 0 0 0;
+            }
+        }
+        .store-list {
+            &.home {
+                background: $base-white !important;
+                padding: 20px 20px 20px 20px;
+            }
+            .card{
+                width:calc(100% - 40px);
+                box-sizing: border-box;
+                margin: 10px 20px;
+                .card-image{
+                    min-height:auto;
+                }
+                .card-content{
+                    min-height:auto;
+                }
+                .short, .short-mid, .mid-long, .long{
+                    min-height:auto;
+                }
+        
+                .short-mid{
+                    min-height:400px;
+                }
+
+                .mid-long{
+                    min-height:520px;
+                }
+
+                .long{
+                    min-height:620px;
+                }
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px;
+            }
+            div{
+                width:calc(100% - 40px);
+                margin: 20px;
+                min-height:auto;
+                height:auto;
+                p{
+                    padding-right: 0px;
+                }
+                &.addon-contact-campaign{
+                    position:relative;
+                    width:calc(100% - 40px);
+                    margin:0 0 20px 0;
+                }
+            }
+            
+        }
+        .benefits {
+            h1{
+                font-size: 1.6em; 
+                margin-bottom: 20px;
+            }
+            
+            i.material-icons {
+                font-size: 1em; 
+                padding: 10px; 
+            }
+            
+            h3{
+                font-size:0.7em;
+            }
+        }
+        .bottom-border{
+            border-bottom:solid #E4E3E4 40px;
+        }
+    }
+    @media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+        .slider{
+            h1{
+                font-size:1.4em;
+                margin-right:0px;
+                margin-left:0px;
+            }
+            h2{
+                padding:10px 20px;
+            }
+            a.btn {
+                margin: 20px 0 0 0;
+            }
+        }
+        .store-list {
+            &.home {
+                background: $base-white !important;
+                padding: 20px 20px 20px 20px;
+            }
+            .card{
+                width:calc(100% - 40px);
+                box-sizing: border-box;
+                margin: 10px 20px;
+                .card-image{
+                    min-height:auto;
+                }
+                .card-content{
+                    min-height:auto;
+                }
+                .short, .short-mid, .mid-long, .long{
+                    min-height:auto;
+                }
+        
+                .short-mid{
+                    min-height:400px;
+                }
+
+                .mid-long{
+                    min-height:520px;
+                }
+
+                .long{
+                    min-height:620px;
+                }
+            }
+        }
+        .offer{
+            h1, h2{
+                padding:20px;
+            }
+            div{
+                width:calc(100% - 40px);
+                margin: 20px;
+                min-height:auto;
+                height:auto;
+                p{
+                    padding-right: 0px;
+                }
+                &.addon-contact-campaign{
+                    position:relative;
+                    width:calc(100% - 40px);
+                    margin:0 0 20px 0;
+                }
+            }
+            
+        }
+        .benefits {
+            h1{
+                font-size: 1.6em; 
+                margin-bottom: 20px;
+            }
+            
+            i.material-icons {
+                font-size: 1em; 
+                padding: 10px; 
+            }
+            
+            h3{
+                font-size:0.7em;
+            }
+        }
+        .bottom-border{
+            border-bottom:solid #E4E3E4 40px;
+        }
+    }
+}

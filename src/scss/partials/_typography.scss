@@ -1,0 +1,79 @@
+/* Typography and element styles */
+
+body{
+	font-family: $base-font, $base-font-family;
+	font-size:$base-font-size;
+	line-height:$base-line-height;
+	font-weight:$base-font-weight;
+	background:$base-grey-light;
+	color:$base-black-light;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include hyphens(auto);
+}
+
+h1{
+	font-family:$header1-font, $header1-font-family;
+	font-weight:$header1-font-weight;
+	font-size:2.4em;
+	margin:0 0 10px 0;
+	display:block;
+	line-height:1.5em;
+	color:$base-orange;
+}
+
+h2{
+	font-family:$header2-font, $header2-font-family;
+	font-weight:$header2-font-weight;
+	font-size:1.4em;
+	line-height:1.5em;
+	margin:0 0 10px 0;
+	letter-spacing:0;
+	color:$base-black-light;
+}
+
+h3{
+	font-family:$header1-font, $header1-font-family;
+	font-weight:$medium;
+	font-size:1.4em;
+	margin:0 0 10px 0;
+	display:block;
+	line-height:1.0em;
+	color:$base-grey-medium-dark;
+}
+	
+p{
+	padding:0px;
+	margin:0px;
+}
+	
+b, strong{
+	font-weight:$bold;
+}
+	
+a{
+	text-decoration:none;
+	font-style:normal;
+	font-weight:$regular;
+	color:$base-orange;
+	&:hover{
+		text-decoration:none;
+		color:$base-orange-dark;
+	};
+}
+
+button{
+    padding:10px;
+    @include border-radius(3px);
+    background:$base-grey-light;
+    border:1px solid $base-grey;
+    margin:2px;
+}
+
+label{
+    font-size:0.8em;
+    padding:0 5px;
+    vertical-align: -1px;
+}
+

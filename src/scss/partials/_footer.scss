@@ -1,0 +1,76 @@
+/* Footer Item styles */
+
+footer{
+    
+    
+    background:$base-grey-medium;
+    @include box-shadow(inset 0px 25px 25px -20px rgba(151, 151, 151, 0.30));
+    
+    .footer-top {
+        display: block;
+        text-align: center;
+        padding:100px 20px 0px;
+        
+        .container-links{
+            padding-bottom:5px;
+        }
+        
+        ul, li{
+            margin: 0 auto;
+            display: inline-block;
+        }
+        
+        a{
+            padding:10px;
+            margin:0 2px;
+            color:$base-grey-dark;
+            @include border-radius(2px);
+            font-weight:$light;
+            line-height: 1.9em;
+            &:hover{
+                background:$base-grey-medium-dark2;
+            }
+        }
+        
+        .container-social{
+            a{
+                color:$base-grey-medium-dark;
+                font-size:1.6em;
+                
+                &:hover{
+                    background:none;
+                    color:$base-grey-dark;
+                }
+            }
+        }
+    }
+    
+    .footer-bottom {
+        display: block;
+        background: $base-grey-medium-dark2;
+        text-align: center;
+        color: #EFF3F5;
+        font-size: 1.0em;
+        padding: 30px;
+        text-align:center;
+        font-weight:$light;
+        color:$base-white-medium;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+
+}
+
+@media only screen and (max-device-width:992px) and (-webkit-min-device-pixel-ratio : 1.5) and (min-device-pixel-ratio : 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3){
+	
+}
+
+@media screen and (max-width:600px) {
+	
+}
+
+@media only screen and (max-device-width:600px) and (-webkit-min-device-pixel-ratio : 1.5) and (min-device-pixel-ratio : 1.5) and (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3){
+
+}
