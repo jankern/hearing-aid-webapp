@@ -5,7 +5,7 @@ Webpack 4 scaffold to build an ES6 / MATERIALIZE-CSS web frontend.
 ### Scripting types
 
 Server side: 
-* (Middle tear sources are not part of this package)
+* (Middle tier sources are not part of this package)
 
 Client side:
 * HTML5, SASS/CSS3, Javascript ES6, materialize-css (0.100.2)
