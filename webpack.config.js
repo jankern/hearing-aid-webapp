@@ -29,7 +29,7 @@ module.exports = () => {
     // Output definition for location and filename of the bundle files
     config.output = {
         path: path.resolve(__dirname, 'resources/dist'),
-        filename: 'js/[name].bundle.js'
+        filename: 'js/[name].bundle.js',
     };
 
     // Plugin array to assign custom plgins to the bundle process
@@ -40,7 +40,7 @@ module.exports = () => {
         // Automated assignment if bundling files to an index.html -> the file can be opened in a browser for test porposes
         new HtmlWebpackPlugin({
             template: './src/static/index.html',
-            baseUrl: '/',
+            baseUrl: './',
             inject: 'body'
         }),
 
@@ -85,6 +85,7 @@ module.exports = () => {
                 loader: {
                     loader: 'file-loader',
                     options: {
+                        publicPath: '/resources/dist/',
                         name: env !== 'production' ? 'img/[name].[ext]' : 'img/[name].[ext]'
                     }
                 }
@@ -94,7 +95,8 @@ module.exports = () => {
                 loader: {
                     loader: 'file-loader',
                     options: {
-                        name: env !== 'production' ? 'font/[name].[ext]' : 'font/[name].[ext]'
+                        publicPath: '/resources/dist/', 
+                        name: env !== 'production' ? 'fonts/[name].[ext]' : 'fonts/[name].[ext]'
                     }
                 }
             }, {
