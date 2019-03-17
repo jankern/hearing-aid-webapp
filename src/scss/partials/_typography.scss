@@ -24,8 +24,8 @@ h1{
 }
 
 h2{
-	font-family:$header2-font, $header2-font-family;
-	font-weight:$header2-font-weight;
+	font-family:$header1-font, $header1-font-family;
+	font-weight:$header1-font-weight;
 	font-size:1.4em;
 	line-height:1.5em;
 	margin:0 0 10px 0;
@@ -48,7 +48,7 @@ p{
 	margin:0px;
 }
 	
-b, strong{
+b, strong, .label-primary{
 	font-weight:$bold;
 }
 	
