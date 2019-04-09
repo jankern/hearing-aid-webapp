@@ -35,13 +35,15 @@ default class Navigation {
     }
     
     /*
-     *  Initialaising scrollspy
+     *  Initialaising scrollspy and Tooltip
      **/
     initScrollSpy(){
         console.log('init Scrollspy');
         $('.scrollspy').scrollSpy({scrollOffset:90});
         let elHeight = $('.single-scroll').height();
         $('.single-scroll').css({marginTop:-(elHeight/2)+'px'});
+        // console.log('+++++++++++++++++++++tooooooltip');
+        // $('.tooltipped').tooltip();
     }
     
     initSlide(){

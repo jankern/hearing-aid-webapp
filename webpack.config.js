@@ -20,7 +20,7 @@ module.exports = () => {
     config.entry = {
         'vendor': ['materialize-css', 'materialize-css/dist/css/materialize.css'],
         'custom': './src/js/index.js',
-        '/../../../redaxo/src/addons/contact_campaign/assets/js/addon_contact_campaign': './redaxo/src/addons/contact_campaign/src/js/addon_contact_campaign.js'
+        //'/../../../redaxo/src/addons/contact_campaign/assets/js/addon_contact_campaign': './redaxo/src/addons/contact_campaign/src/js/addon_contact_campaign.js'
     };
 
     // Assigning runtime environment to the mode variable
