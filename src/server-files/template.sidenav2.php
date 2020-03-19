@@ -48,7 +48,7 @@ foreach (rex_category::getRootCategories() as $lev1) {
                 $i = 0;
                 foreach($referenceCategory->getArticles() as $navArticle){ 
                     
-                    if(!$navArticle->isStartArticle()){
+                    if($navArticle->isOnline() && !$navArticle->isStartArticle()){
 
                         $name = Utils::normalizeArticleNameForReference($navArticle->getValue("name"));
                         

@@ -1,33 +1,25 @@
-/*
- *  ENVIRONMENT = 
- */
 
 // Webpack imports
-// import '../scss/styles.scss';
 // Global var to use it across components
-// import $ from 'jquery';
-// import 'materialize-css';
-// import 'materialize-css/dist/css/materialize.css';
+import 'materialize-css/dist/js/materialize.min.js';
+import 'materialize-css/dist/css/materialize.min.css';
 import '../scss/styles.scss';
 
 
 // Class and Function Imports
-import Navigation from './navigation';
+import Main from './template.main';
 
 // Class intialisation
-let navigation = new Navigation();
+let main = new Main();
 
-
-// JQuery $(document).ready function 
 $(function() {
-    
-    navigation.initScrollSpy();
-    navigation.initSlide();
-    navigation.initModal();
-    navigation.initLogoSlide();
-    navigation.initMainMenu();
-    navigation.initSelect();
-    console.log('Rendered');
 
+    main.initScrollSpy();
+    main.initSlide();
+    main.initModal();
+    main.initLogoSlide();
+    main.initMainMenu();
+    main.initSelect();
+    console.log('Rendered');
     
 });

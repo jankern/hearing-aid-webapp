@@ -115,6 +115,18 @@ setlocale (LC_ALL, rex_clang::getCurrent()->getValue('clang_setlocale'));
         }
         
     ?>
+   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129615842-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129615842-1');
+    </script>
+   
+    <!-- Cookie Consent -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script>
@@ -141,12 +153,12 @@ setlocale (LC_ALL, rex_clang::getCurrent()->getValue('clang_setlocale'));
     </script>
 
     <link href="<? echo rex::getProperty('protocol'); ?>fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,300,300italic,400italic,500,500italic|Roboto+Condensed" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<?= rex_url::base('resources/dist/css/vendor.bundle.css') ?>">
-    <link rel="stylesheet" href="<?= rex_url::base('resources/dist/css/custom.bundle.css') ?>">
+    <link rel="stylesheet" href="<?= rex_url::base('resources/dist/css/vendor0.bundle.css') ?>">
+    <link rel="stylesheet" href="<?= rex_url::base('resources/dist/css/main2.bundle.css') ?>">
+    <link rel="stylesheet" href="<?= rex_url::base('resources/dist/css/custom2.bundle.css') ?>">
 
     <link rel="stylesheet" href="<?= rex_url::base('resources/css/font-awesome.min.css') ?>">
     <link rel="stylesheet" href="<?= rex_url::base('resources/css/prettify.css') ?>">
-
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?= rex_url::base('resources/favicons/apple-touch-icon.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= rex_url::base('resources/favicons/favicon-32x32.png') ?>">
@@ -154,7 +166,7 @@ setlocale (LC_ALL, rex_clang::getCurrent()->getValue('clang_setlocale'));
     
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<!script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>

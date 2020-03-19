@@ -167,10 +167,12 @@ nav {
 .side-nav {
     text-align: left;
     z-index: 999;
+    width: auto;
+    padding-right: 20px;
     
     div.side-nav-header{
         height:90px;
-        width:100%;
+        width: calc(100% + 20px);
         background:$base-orange;
         z-index:9999;
     }

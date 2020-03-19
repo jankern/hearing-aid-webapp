@@ -1,5 +1,5 @@
 <!-- *******************************************************
-Kategorie-/Artikelliste - Output
+Kategorie-/Artikelliste mit Inhaltsangabe - Output
 ******************************************************** -->
 <?php
 
@@ -48,8 +48,9 @@ Kategorie-/Artikelliste - Output
             $templateArticleItem .= '<div class="section scrollspy" id="'.$name.'">';
 
             // add scroll spy id to link element
-            $contentDisclosure .= '<div class="collapsible-body"><a href="#'.$name.'"><i class="inverse">'.($articleCount+1).'</i> '.$article->getValue("name").'</a></div>';
-
+            if($articleCount >= 1){
+                $contentDisclosure .= '<div class="collapsible-body"><a href="#'.$name.'"><i class="inverse">'.($articleCount).'</i> '.$article->getValue("name").'</a></div>';
+            }
             // Analyse slices for output
             $slices = rex_article_slice::getSlicesForArticle($article->getId(), $article->getClang());
             // color iterator
@@ -75,7 +76,7 @@ Kategorie-/Artikelliste - Output
                     $templateSliceItem .= $slice->getSlice();
                     $templateSliceItem .= '</div>';
 
-                    $colorIndex ++;
+                    $colorIndex++;
 
                 }else{
                     // ganze browserbreite
