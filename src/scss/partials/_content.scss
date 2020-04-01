@@ -195,20 +195,16 @@
     
     .offer{
         text-align:center;
-        h1{
-           padding:20px 250px; 
-        }
-        h2{
-            padding:0px 200px 30px;  
-            font-family:$header2-font, $header2-font-family;
-            font-weight:$header2-font-weight;
+        h1, h2{
+		   padding:20px 250px; 
+		   font-size:2.4em;
+		   color:$base-orange;
         }
         h3{
-            color:$base-orange;
-            font-size:1.1em;
-            margin:0px;
-            text-align:left;
-            padding: 0 0 10px 0;
+			color:$base-black;
+			padding:0px 200px 30px;  
+            font-family:$header2-font, $header2-font-family;
+            font-weight:$header2-font-weight;
         }
         
         .text-container{

@@ -9,7 +9,8 @@ module.exports = {
     },
     output: {
         filename: 'js/[name][id].bundle.js',
-        path: path.resolve(__dirname, '../resources/dist')
+		//path: path.resolve(__dirname, '../resources/dist')
+		path: path.resolve(__dirname, '../../../terzozentrum-relaunch/docker-redaxo-5-9/html/resources/dist')
     },
     module: {
         rules: [
