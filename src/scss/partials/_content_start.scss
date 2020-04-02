@@ -28,7 +28,6 @@ body {
             display:inline-block;
             margin:5px 20%;
             padding:10px 20px;
-//            background-color:rgba(243, 126, 7, 0.5);
             background-color:rgba(0, 0, 0, 0.3);
         }
         h2{
@@ -51,7 +50,7 @@ body {
     .store-list {
         text-align: center;
         background-color:$base-grey-light;
-        h1 {
+        h1, h2 {
             color: $base-grey-medium;
             font-size: 4em;
             line-height: 1.1em;
@@ -71,7 +70,7 @@ body {
             .centered {
                 width: 100%;
             }
-            h1 {
+            h1, h2 {
                 color: $base-black;
                 margin-top: 0px;
                 padding: 20px 15px;
@@ -100,7 +99,7 @@ body {
     }
     .benefits {
         background-color:$base-grey-light;
-        h1 {
+        h1, h2 {
             color: $base-grey-medium-dark;
             font-size: 3em;
             line-height: 1.1em;
@@ -145,7 +144,7 @@ body {
             }
         }
         .benefits {
-            h1{
+            h1, h2{
                font-size: 2em; 
                 margin-bottom: 40px;
             }
@@ -160,7 +159,7 @@ body {
             }
         }
         .offer{
-            h1, h2{
+            h1, h2, h3{
                 padding:20px 40px;
             }
             div{
@@ -168,7 +167,7 @@ body {
             }
         }
         .store-list {
-            h1 {
+            h1, h2 {
                 font-size: 2em;
                 line-height: 1.0em;
                 margin-bottom: 50px;
@@ -189,7 +188,7 @@ body {
             }
         }
         .benefits {
-            h1{
+            h1, h2{
                font-size: 2em; 
                 margin-bottom: 40px;
             }
@@ -204,7 +203,7 @@ body {
             }
         }
         .offer{
-            h1, h2{
+            h1, h2, h3{
                 padding:20px 40px;
             }
             div{
@@ -212,7 +211,7 @@ body {
             }
         }
         .store-list {
-            h1 {
+            h1, h2 {
                 font-size: 2em;
                 line-height: 1.0em;
                 margin-bottom: 50px;

@@ -1,9 +1,9 @@
 /*
- *  Class Navigation
+ *  Class addon
  */
 
 export
-default class Form {
+default class AddonContactCampain {
 
     constructor() {
         this.formSectionList = [];
@@ -127,16 +127,16 @@ default class Form {
     }
 
     showProgressStatus(isHidden, callback) {
-        if(isHidden){
-            $('.preloader-layer').css({display:"block"});
-            $('.preloader-layer').animate({opacity:"1.0"}, 500);
-        }else{
-            $('.preloader-layer').animate({opacity:"0"}, 500, () => {
-                $('.preloader-layer').css({display:"none"});
+        if (isHidden) {
+            $('.preloader-layer').css({ display: "block" });
+            $('.preloader-layer').animate({ opacity: "1.0" }, 500);
+        } else {
+            $('.preloader-layer').animate({ opacity: "0" }, 500, () => {
+                $('.preloader-layer').css({ display: "none" });
             });
         }
         // if calback function is present, execute
-        if(callback){
+        if (callback) {
             callback();
         }
     }
@@ -162,7 +162,7 @@ default class Form {
                 }
             });
         });
-        
+
 
         $('#concam-form').on('submit', (e) => {
 
@@ -172,7 +172,7 @@ default class Form {
             console.log(isValid);
 
             if (isValid) {
-                
+
                 // start preloader screen
                 this.showProgressStatus(true);
 
@@ -180,8 +180,8 @@ default class Form {
                 let requestMethod = $(e.currentTarget).attr('method'); //get form GET/POST method
                 let formData = '';//new FormData(e.currentTarget); //Creates new FormData obje
                 formData = $(e.currentTarget).serialize();
-                
-                
+
+
                 $.ajax({
                     url: postUrl,
                     data: formData,
@@ -189,18 +189,18 @@ default class Form {
                     cache: false,
                     type: requestMethod
                 }).done((response) => { //
-                    
+
                     $("#concam-response").html(response);
-                    $("#concam-response").css({display:'block'});
-                    $("#concam-form").css({display:'none'});
+                    $("#concam-response").css({ display: 'block' });
+                    $("#concam-form").css({ display: 'none' });
                     this.showProgressStatus(false);
-                    
+
                 }).fail((error, status) => { //
-                    
-                    console.log(error+' '+status);
+
+                    console.log(error + ' ' + status);
                     $("#concam-response").html(error);
-                    $("#concam-response").css({display:'block'});
-                    $("#concam-form").css({display:'none'});
+                    $("#concam-response").css({ display: 'block' });
+                    $("#concam-form").css({ display: 'none' });
                     this.showProgressStatus(false);
                 });
             }
@@ -227,3 +227,15 @@ default class Form {
     }
 
 }
+
+let addonContactCampaign = new AddonContactCampain();
+addonContactCampaign.showProgressStatus(true); 
+
+// JQuery $(document).ready function 
+$(function() {
+    
+    addonContactCampaign.init();
+    addonContactCampaign.showProgressStatus(false);
+    console.log('Addon loaded');
+    
+});

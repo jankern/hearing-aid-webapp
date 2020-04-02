@@ -195,26 +195,30 @@
     
     .offer{
         text-align:center;
-        h1{
-           padding:20px 250px; 
-        }
-        h2{
-            padding:0px 200px 30px;  
-            font-family:$header2-font, $header2-font-family;
-            font-weight:$header2-font-weight;
+        h1, h2{
+		   padding:20px 250px; 
+		   font-size:2.4em;
+		   color:$base-orange;
         }
         h3{
-            color:$base-orange;
-            font-size:1.1em;
-            margin:0px;
-            text-align:left;
-            padding: 0 0 10px 0;
+			color:$base-black;
+			padding:0px 200px 30px;  
+            font-family:$header2-font, $header2-font-family;
+            font-weight:$header2-font-weight;
         }
         
         .text-container{
             &.padding-left h3, &.padding-left p{
                 padding-left: 120px;
-            }
+			}
+			h3{
+				font-family: $header1-font, $header1-font-family;
+				color:$base-orange;
+				font-size: 1.1em;
+				margin: 0;
+				text-align: left;
+				padding: 0 0 10px;
+			}
             i{
                 float: left;
                 font-size: 2.4em;
@@ -310,7 +314,7 @@
                     margin:-10px 0px 0px -10px; 
                     background:$base-orange-medium;
                     
-                    h1{
+                    h1, h2{
                         padding:20px 5px;
                         margin:0px;
                         color:$base-white;
