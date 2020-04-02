@@ -210,7 +210,15 @@
         .text-container{
             &.padding-left h3, &.padding-left p{
                 padding-left: 120px;
-            }
+			}
+			h3{
+				font-family: $header1-font, $header1-font-family;
+				color:$base-orange;
+				font-size: 1.1em;
+				margin: 0;
+				text-align: left;
+				padding: 0 0 10px;
+			}
             i{
                 float: left;
                 font-size: 2.4em;
@@ -306,7 +314,7 @@
                     margin:-10px 0px 0px -10px; 
                     background:$base-orange-medium;
                     
-                    h1{
+                    h1, h2{
                         padding:20px 5px;
                         margin:0px;
                         color:$base-white;

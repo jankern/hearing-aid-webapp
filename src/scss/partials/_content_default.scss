@@ -310,7 +310,7 @@
     .store-list {
         text-align: center;
         background-color:$base-grey-light;
-        h1 {
+        h1, h2 {
             color: $base-grey-medium;
             font-size: 4em;
             line-height: 1.1em;
@@ -327,7 +327,7 @@
             .centered {
                 width: 100%;
             }
-            h1 {
+            h1, h2 {
                 color: $base-black;
                 margin-top: 0px;
             }
@@ -713,7 +713,7 @@
             }
         }
         .store-list {
-            h1 {
+            h1, h2 {
                 font-size: 2em;
                 line-height: 1.0em;
                 margin-bottom: 50px;
@@ -742,7 +742,7 @@
             }
         }
         .offer{
-            h1, h2{
+            h1, h2, h3{
                 padding:20px;
             }
             div{
@@ -830,7 +830,7 @@
             }
         }
         .store-list {
-            h1 {
+            h1, h2 {
                 font-size: 2em;
                 line-height: 1.0em;
                 margin-bottom: 50px;
@@ -859,7 +859,7 @@
             }
         }
         .offer{
-            h1, h2{
+            h1, h2, h3{
                 padding:20px;
             }
             div{
