@@ -4,12 +4,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/js/index.js',
-        '../../../assets/addons/contact_campaign/js/addon.contact_campaign': './src/js/addon.contact_campaign'
+		main: './src/js/index.js',
+		// target addon location as a shortcut fo development if addon gets not reinstalled
+		'../../../assets/addons/contact_campaign/js/addon.contact_campaign': './src/js/addon.contact_campaign',
+		// initial addon location. From there the files is being processed while installation routine
+		'../../../redaxo/src/addons/contact_campaign/assets/js/addon.contact_campaign': './src/js/addon.contact_campaign'
     },
     output: {
-        filename: 'js/[name][id].bundle.js',
+		filename: 'js/[name][id].bundle.js',
+		// path to use for the standalone FE package
 		//path: path.resolve(__dirname, '../resources/dist')
+		// path to use for separate backend package location 
 		path: path.resolve(__dirname, '../../../terzozentrum-relaunch/docker-redaxo-5-9/html/resources/dist')
     },
     module: {
