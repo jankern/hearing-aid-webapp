@@ -20,6 +20,6 @@ $(function() {
     main.initLogoSlide();
     main.initMainMenu();
     main.initSelect();
-    console.log('Rendered');
+    //console.log('Rendered');
     
 });

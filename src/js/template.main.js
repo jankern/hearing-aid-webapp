@@ -38,7 +38,7 @@ default class Main {
      *  Initialaising scrollspy and Tooltip
      **/
     initScrollSpy(){
-        console.log('init Scrollspy');
+        // console.log('init Scrollspy');
         $('.scrollspy').scrollSpy({scrollOffset:90});
         let elHeight = $('.single-scroll').height();
         $('.single-scroll').css({marginTop:-(elHeight/2)+'px'});
@@ -47,14 +47,14 @@ default class Main {
     }
     
     initSlide(){
-        console.log('init Slide');
+        // console.log('init Slide');
         // TODO multi element ability
         
         // data-indicators true/false attribute defines if there is an indicator navigation for the slider
         let hasIndicators = $('.slider').data("indicators") === 1?true:false;
         
-        let windowHeight = $(window).height(); console.log(windowHeight);
-        let menuHeight = $('header').height(); console.log(menuHeight);
+        let windowHeight = $(window).height(); //console.log(windowHeight);
+        let menuHeight = $('header').height(); //console.log(menuHeight);
         
         $('.slider').height(windowHeight-menuHeight+'px');
         
@@ -98,9 +98,9 @@ default class Main {
             
             $('.logo-stepper-container > .logo-stepper > a').each(function(){
                 logoWidth += parseInt($(this).css('width'));
-                console.log($(this));
-                console.log('logowith');
-                console.log(logoWidth);
+                // console.log($(this));
+                // console.log('logowith');
+                // console.log(logoWidth);
                 logoAmount++;
                 if($(this).attr('title') !== undefined){
                    pictureTitle = $(this).attr('title');

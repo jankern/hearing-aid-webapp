@@ -272,17 +272,18 @@
                 }
                 
                 p.footnote{
-                    i.material-icons{
-                        font-size: 3em;
-                        display: block;
-                        opacity: 0.5;
-                        padding: 0 0 5px;
-                    }
+                    // i.material-icons{
+                    //     font-size: 3em;
+                    //     display: block;
+                    //     opacity: 0.5;
+                    //     padding: 0 0 5px;
+                    // }
                     font-size: 0.8em;
                     font-weight: 300;
-                    width: 200px;
+					// width: 200px;
+					// padding-left: 35px;
                     text-align: center;
-                    margin: 70px auto 0;
+                    margin: 20px auto 0;
                     line-height: 1.4em;
                     
                 }
@@ -471,7 +472,21 @@
                         background:$base-grey-light;
                         color:$base-grey-dark;
                     }
-                }
+				}
+				
+				::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					color: white;
+				}
+				::-moz-placeholder { /* Firefox 19+ */
+					color: white;
+				}
+				:-ms-input-placeholder { /* IE 10+ */
+					color: white;
+				}
+				:-moz-placeholder { /* Firefox 18- */
+					color: white;
+				}
+
             }    
         }
         

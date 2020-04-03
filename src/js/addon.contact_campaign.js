@@ -94,7 +94,6 @@ default class AddonContactCampain {
 
             // If something is not valid, section next button will be disabled
             if (!stepIsValid) {
-                console.log('INVALID - ausgrauen');
                 $('#contact-form-button').attr('disabled', 'disabled');
                 $('#contact-form-submit-button').attr('disabled', 'disabled');
             } else {
@@ -169,7 +168,7 @@ default class AddonContactCampain {
             e.preventDefault();
             let isValid = this.validateSections(true);
 
-            console.log(isValid);
+            // console.log(isValid);
 
             if (isValid) {
 
@@ -195,12 +194,16 @@ default class AddonContactCampain {
                     $("#concam-form").css({ display: 'none' });
                     this.showProgressStatus(false);
 
-                }).fail((error, status) => { //
+                }).fail((error, status) => { // error: {"readyState":4,"responseText":"Captcha falsch, bidde nochmal","status":403,"statusText":"Forbidden"}
 
-                    console.log(error + ' ' + status);
-                    $("#concam-response").html(error);
-                    $("#concam-response").css({ display: 'block' });
-                    $("#concam-form").css({ display: 'none' });
+					if(error.status === 403){
+						$("#capture-response-text").html(error.responseText);
+						$("#concam-response").css({ display: "block" });
+					}else{
+						$("#concam-response").html(error.responseText);
+						$("#concam-response").css({ display: 'block' });
+						$("#concam-form").css({ display: 'none' });
+					}
                     this.showProgressStatus(false);
                 });
             }
@@ -210,7 +213,6 @@ default class AddonContactCampain {
         $('.form-body').find('input:radio, input:checkbox').each((index, element) => {
             $(element).on('click', (e) => {
                 // e.stopPropagation();
-                console.log('click-' + $(element).attr('id'));
                 this.validateSections(true);
 
             });
@@ -218,7 +220,6 @@ default class AddonContactCampain {
 
         $('.form-section input:text, .form-section input[type=email]').each((index, element) => {
             $(element).on('blur', (e) => {
-                console.log('blur');
                 this.validateSections(true);
             });
         });
@@ -236,6 +237,6 @@ $(function() {
     
     addonContactCampaign.init();
     addonContactCampaign.showProgressStatus(false);
-    console.log('Addon loaded');
+    //console.log('Addon loaded');
     
 });
