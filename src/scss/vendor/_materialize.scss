@@ -171,6 +171,19 @@ textarea.materialize-textarea {
     box-shadow: 0 1px 0 0 $message-error-light;
 }
 
+.captcha-container .input-field input[type="text"] {
+    padding: 0px 0 0;
+}
+
+.captcha-container .input-field input[type="text"]:not(.browser-default){
+    margin-bottom:5px;
+    text-align: center;
+}
+
+.captcha-container .input-field input[type="text"]:not(.browser-default):focus{
+    //border-bottom: solid 1px white;
+}
+
 .container-fluid .offer div.addon-contact-campaign div.preloader-wrapper.small{
     width:36px;
     height:36px;

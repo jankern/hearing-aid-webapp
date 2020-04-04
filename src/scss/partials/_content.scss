@@ -19,6 +19,11 @@
     }
 }
 
+.warn{
+    font-weight: 500;
+    color: $message-error;
+}
+
 .container-fluid{
     .centered{
         width:1030px;
@@ -272,20 +277,20 @@
                 }
                 
                 p.footnote{
-                    // i.material-icons{
-                    //     font-size: 3em;
-                    //     display: block;
-                    //     opacity: 0.5;
-                    //     padding: 0 0 5px;
-                    // }
+                    i.material-icons{
+                        font-weight: 500;
+                        vertical-align: -1px;
+                       
+                    }
                     font-size: 0.8em;
                     font-weight: 300;
-					// width: 200px;
-					// padding-left: 35px;
                     text-align: center;
-                    margin: 20px auto 0;
+                    margin: 20px auto 5px;
                     line-height: 1.4em;
-                    
+                }
+
+                .captcha-container{
+                    margin-top: -230px
                 }
                 
                 .preloader-layer{
