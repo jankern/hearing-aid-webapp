@@ -307,7 +307,8 @@
                 }
                 
                 #concam-response{
-                    display:none;
+					display:none;
+					color:white;
                 }
                 
                 #contact-form-submit-button{display:none};
@@ -469,7 +470,7 @@
                     padding:10px;
                 }
                 
-                button, input[type=submit]{
+                button, input[type=submit], button, input[type=reset]{
                     display:block;
                     margin:0px;
                     width:100%; 

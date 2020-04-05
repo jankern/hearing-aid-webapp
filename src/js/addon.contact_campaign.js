@@ -146,12 +146,38 @@ default class AddonContactCampain {
             this.formSectionList.push($(element));
         });
 
-
         $('#contact-form-button').on('click', (e) => {
-            // e.stopPropagation();
+			// e.stopPropagation();
             this.validateSections(false);
+		});
+		
+		// reset the form
+		$('#contact-reset-button').on('click', (e) => {
 
-        });
+			this.formSectionList = [];
+			this.currentFormSectionIndex = 0;
+			this.topMargin = 0;
+
+			$('.form-section-container').css({ "marginTop": this.topMargin + "px" });
+
+			$('.form-section').each((index, element) => {
+				this.formSectionList.push($(element));
+			});
+
+			$('#concam-form').trigger("reset");
+
+			$("#concam-response").css({ display: 'none' });
+
+			$(".form-header").css({ display: 'block' });
+			$(".form-body").css({ display: 'block' });
+			$("#contact-form-button").css({ display: 'block' });
+			$("#contact-reset-button").css({ display: 'none' });
+			$("#capture-response-text span.warn").html('');
+
+			// reset captcha
+			document.getElementById('captcha').src = '/assets/addons/contact_campaign/securimage/securimage_show.php?' + Math.random(); return false;
+
+		});
 
         // block tab key for each last input field of a section to avoid display error
         $('.form-section [data-no-tab]').each((index, element) => {
@@ -198,11 +224,17 @@ default class AddonContactCampain {
 
 					if(error.status === 403){
 						$("#capture-response-text").html(error.responseText);
-						$("#concam-response").css({ display: "block" });
+						$("#concam-response").html('');
+						$("#concam-response").css({ display: "none" });
 					}else{
 						$("#concam-response").html(error.responseText);
 						$("#concam-response").css({ display: 'block' });
-						$("#concam-form").css({ display: 'none' });
+
+						$(".form-header").css({ display: 'none' });
+						$(".form-body").css({ display: 'none' }); 
+						$("#contact-form-button").css({ display: 'none' });
+						$("#contact-reset-button").css({ display: 'block' });
+						$("#contact-form-submit-button").css({ display: 'none' });
 					}
                     this.showProgressStatus(false);
                 });
@@ -225,7 +257,7 @@ default class AddonContactCampain {
         });
 
 
-    }
+	}
 
 }
 
